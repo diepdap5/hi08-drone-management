@@ -21,7 +21,7 @@ export default function Sidebar(props) {
   const { social } = props;
 
   return (
-    <Grid item xs={12} md={4}>
+    <Grid item xs={12} md={12}>
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
         Social
       </Typography>
