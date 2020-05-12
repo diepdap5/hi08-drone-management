@@ -1,30 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Slider from './Component/Slider'
+import React, { Component } from 'react'
+import withStyles from '@material-ui/core/styles/withStyles'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
+import Slider from './Component/Slider'
+import Header from './Component/Header'
+import Footer from './Component/Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <Grid container spacing={0}>
-        <Grid item lg={12}>
-          <Grid item lg={2}>
-            <img src="../public/image/logo.png" />
-          </Grid>
-          <Grid item lg={10}>
-            <Button variant="contained" color="primary">
-              Primary
-            </Button>
-          </Grid>
-        </Grid>
-        <Grid item lg={12}>
-          <Slider />
-        </Grid>
-      </Grid>
-    </div>
-  );
-}
+const style = theme => ({
+    header: {
+      height: 100,
+    }
+})
 
-export default App;
+const Valuebutton = ['1', '2', '3','4','5','6','7','8','9','10' ]
+class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+    }
+  }
+    render() {
+        const { classes } = this.props;
+        return (
+          <div className="App">
+          <Grid container spacing={0}>
+            <Grid item lg={12} >
+              <Header />
+            </Grid>
+            <Grid item lg={12}>
+              <Slider />
+            </Grid>
+            <Grid item lg={12}>
+              <Footer />
+            </Grid>
+          </Grid>
+        </div>
+  
+        )
+    }
+  }
+export default withStyles(style)(Home);
