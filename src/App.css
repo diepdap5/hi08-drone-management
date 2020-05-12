@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.groupDetail{
+  height: 150px;
+  background-color: #d6e7e6;
+  margin: 10px 10px 0px 10px;
+  font-size: large;
+  line-height: 150px;
+}

@@ -6,7 +6,7 @@ import content from './content';
 // cần chỉnh sửa lại ảnh ở slide
 function Autoplay() {
 	return (
-		<div>
+		<div className ="Slider">
 			<Slider  autoplay={3000}>
 				{content.map((item, index) => (
 					<div

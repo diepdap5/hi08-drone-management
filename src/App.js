@@ -4,6 +4,8 @@ import './App.css';
 import Slider from './Component/Slider'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
+import NoiDung from './Component/Noidung'
+import groupDetail from './Component/groupDetail'
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
         </Grid>
         <Grid item lg={12}>
           <Slider />
+        </Grid>
+        <Grid item lg={12}>
+          <NoiDung />
         </Grid>
       </Grid>
     </div>
