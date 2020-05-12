@@ -36,7 +36,7 @@ class Home extends Component {
               <NoiDung Group_names = {Group_names}/>
             </Grid>
             <Grid item lg={12}>
-              <Footer />
+              <Footer title="Footer" description="Something here to give the footer a purpose!" />
             </Grid>
           </Grid>
         </div>
